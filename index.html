@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div class="success-message" id="success-message" role="status" aria-live="polite">
+    <div class="success-title">
+        <span class="success-icon"><img src="assets\images\icon-success-check.svg" alt="check"></span>
+        <strong>Message Sent!</strong>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+<div id="card_form">
+  <form action="" id="form" novalidate>
+  <h3> Contact Us</h3>
+<div class="ligne">
+<div class="goup_input1">
+  <label for="F_name">First Name *</label> 
+  <input type="text" id="Fname" > 
+  <small  class="required-message" hidden> This field is required</small>
+</div>
+
+<div class="goup_input1">
+  <label for="L_name"> Last Name *</label>
+  <input type="text" id="Lname" > 
+  <small  class="required-message"hidden>This field is required</small>
+</div>
+</div>
+<div class="goup_input">
+   <label for="email">Email Address *</label>
+   <input type="email" id="email" > 
+   <small  class="error-message" hidden>Please enter a valid email address</small>
+  <small  class="required-message" hidden>This field is required</small>
+  </div>
+  <div class="radio-group">
+  <label for="type">Query Type *</label> 
+  <div class="ligne">
+  <div class="radio">
+    <input type="radio" name="type">
+    <label for="type"> General Enquiry</label>
+  </div>
+  <div class="radio">
+    <input type="radio" name="type">
+    <label for="type"> Support Request</label>
+  </div>
+  </div>
+  <small  class="required-message" hidden>Please select a query type</small>
+  </div>
+  <div class="goup_input">
+  <label for="Message">Message *</label> 
+  <textarea name="Message" id="Message"></textarea>
+  <small  class="required-message" hidden>This field is required</small>
+  </div>
+  <div class="consent">
+  <input type="checkbox" id="checkbox"><label for="checkbox">I consent to being contacted by the team *</label>
+  <small class="required-message" hidden>To submit this form, please consent to being contacted</small>
+  </div>
+  <div class="btn">
+  <button type="submit" id="submit"> Submit</button>
+  </div>
+  </form>
+  </div>
+<!--
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+-->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
